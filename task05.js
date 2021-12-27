@@ -12,14 +12,13 @@ const products = [
 ];
 
 const getAllPropValues = function(arr, prop) {
-  
-    for (let keys of [ ... Object.keys(arr) ] ) {
+  let result = [];
+  for (let item of arr){
 
-        return  keys
-};
-
-
-
+    result.push(item[prop]);
+  }
+  return result
+}
 
 
 
